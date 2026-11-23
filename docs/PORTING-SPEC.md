@@ -94,7 +94,7 @@
 
 | 机制 | 说明 | 移植注意 |
 |------|------|----------|
-| **PGS 兜底窗口** | 解码时刻按单调钟记截止时刻，与 pts 窗口取或：`now <= pgs_end_us || now <= pgs_fallback_end_us` | 依赖单调钟，逻辑不变 |
+| **PGS 兜底窗口** | 解码时刻按单调钟记截止时刻，与 pts 窗口取或：`now <= pgs_end_us \|\| now <= pgs_fallback_end_us` | 依赖单调钟，逻辑不变 |
 | **libass 渲染** | `ass_library_init`、`ass_render`、消息回调路由到 `pn_log` | libass 跨平台（Windows/iOS 均有构建），字体查找路径需按平台配置（fontconfig / 手动指定字体目录） |
 
 **平台依赖检查**：libass + 单调钟。无 Android API。

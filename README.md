@@ -2,8 +2,8 @@
 
 # Playable
 
-### 跨平台媒体播放器 · Android / Windows / iOS
-#### 自研 PlayNative 内核，直连 `.strm` 媒体库
+## 跨平台媒体播放器 · Android / Windows / iOS
+### 自研 PlayNative 内核，直连 `.strm` 媒体库
 
 [简体中文](README.md) · [English summary](#english-summary)
 
