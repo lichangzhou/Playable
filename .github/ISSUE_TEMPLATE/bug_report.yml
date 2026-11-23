@@ -1,0 +1,53 @@
+name: Bug report
+description: Something does not work as expected
+title: "[bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        ⚠️ **Do not paste server addresses, tokens, or your `data/config.json` here.**
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "Android phone / Android TV / Windows / iOS"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Playable version
+      placeholder: "v54 / 1.1.63"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      render: shell
+      description: "adb logcat -s PlayNative:*"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I removed all credentials and server addresses from the log output above
+          required: true

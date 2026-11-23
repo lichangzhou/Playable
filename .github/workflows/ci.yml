@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+      - name: Lint markdown files
+        run: markdownlint "**/*.md" --ignore node_modules
+
+  links:
+    name: Check internal links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify referenced files exist
+        run: |
+          set -e
+          for f in docs/ECOSYSTEM.md docs/PORTING-SPEC.md docs/assets/README.md LICENSE; do
+            [ -f "$f" ] || { echo "missing: $f"; exit 1; }
+          done
+          echo "all referenced files present"
