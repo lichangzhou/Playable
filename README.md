@@ -197,6 +197,15 @@ progress, with the full porting checklist in [`docs/PORTING-SPEC.md`](docs/PORTI
 问题模板会要求填**平台**（手机 / 电视 / Windows / iOS）和**版本号**，这两项是定位问题的关键。
 使用类问题请发讨论区，issue 留给真正的缺陷。
 
+### 直接联系
+
+如果 issue / 讨论区不好用，也可以直接找我：
+
+| 渠道 | 联系方式 |
+|---|---|
+| 邮箱 | `1543079796@qq.com` |
+| QQ | `1543079796` |
+
 ⚠️ **切勿把服务器地址、token 或账号信息贴进 issue**，请先脱敏。
 
 ---
