@@ -184,6 +184,23 @@ progress, with the full porting checklist in [`docs/PORTING-SPEC.md`](docs/PORTI
 
 ---
 
+## 🐛 问题反馈
+
+**遇到 BUG 或有建议？在这里提，会直达维护者：**
+
+| 想反馈什么 | 入口 |
+|---|---|
+| BUG、播放失败、崩溃 | [提交问题报告](https://github.com/lichangzhou/Playable/issues/new?template=bug_report.yml) |
+| 功能建议 | [提交功能建议](https://github.com/lichangzhou/Playable/issues/new?template=feature_request.yml) |
+| 使用问题、怎么配置 | [讨论区](https://github.com/lichangzhou/Playable/discussions) |
+
+问题模板会要求填**平台**（手机 / 电视 / Windows / iOS）和**版本号**，这两项是定位问题的关键。
+使用类问题请发讨论区，issue 留给真正的缺陷。
+
+⚠️ **切勿把服务器地址、token 或账号信息贴进 issue**，请先脱敏。
+
+---
+
 ## License
 
 [MIT](LICENSE) —— 文档与本仓库内代码部分。APK 分发与商业授权另行约定。
